@@ -1,0 +1,53 @@
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+// Login form
+.bodybg {
+    background-image: url("/assets/images/login.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+  .login-panel {
+    text-align: center;
+    width: 350px;
+    min-height: 350px;
+    padding: 50px 20px;
+    margin: 100px auto 0 auto;
+    background-color:rgba(255, 255, 255, 0.8);
+  }
+  .login-panel .ui-g .ui-g-12 {
+    padding: 25px 40px;
+  }
+  .login-panel .ui-g .ui-g-12 .ui-button {
+    margin-bottom: 20px;
+  }
+  .login-panel .ui-button:hover {
+    background-color: #00838f;
+  }
+  .login-panel .ui-button:focus {
+    outline: 0 none;
+    background-color: #08e3ff;
+  }
+  .login-panel .ui-button.secondary:hover {
+    background-color: #ff8f00;
+  }
+  .login-panel .ui-button.secondary:focus {
+    outline: 0 none;
+    background-color: #ffce3a;
+  }
+
+
+// 404 page
+.notfound {
+    background-image: url("/assets/images/404.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+}
+
+// Table
+.ui-table .ui-table-thead > tr > th, td {
+  text-align: center;
+}

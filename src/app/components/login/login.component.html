@@ -1,0 +1,39 @@
+<div class="card login-panel ui-fluid">
+  <div class="ui-g">
+    <div class="ui-g-12">
+      <span class="md-inputfield">
+        <input id="email" type="text" autocomplete="off" class="form-control" placeholder="Email"
+          [(ngModel)]="user.email" name="email" required>
+      </span>
+    </div>
+    <div class="ui-g-12">
+      <span class="md-inputfield">
+        <input id="pass" type="password" autocomplete="off" class="form-control" placeholder="Password"
+          [(ngModel)]="user.password" name="password" required id="password">
+      </span>
+    </div>
+    <div class="ui-g-12">
+      <button type="button" class="btn btn-primary" (click)="onSubmit()">
+        <span class="
+        ui-button-icon-left ui-c fa fa-fw fa-user"></span>
+        <span class="ui-button-text ui-c">Sign In</span>
+      </button>
+    </div>
+    <div class="ui-g-12">
+      <button type="button" class="btn btn-info" (click)="showLoginInfo()">
+        <span class="
+        ui-button-icon-left ui-c fa fa-fw fa-info"></span>
+        <span class="ui-button-text ui-c">Click here for login data</span>
+      </button>
+    </div>
+
+    <div class="alert alert-danger ui-lg-12" role="alert" *ngIf="errorMessage" style="color: #cc0000">
+      {{errorMessage}}
+    </div>
+
+  </div>
+
+  <p-dialog header="Use this data for login" [(visible)]="displayLoginInfo">
+    Email: eve.holt@reqres.in<br>
+    Password: pistol
+  </p-dialog>
